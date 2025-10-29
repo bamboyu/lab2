@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "jsx": "react",
+    "jsx": "preserve",
     "jsxFactory": "createElement",
-    "jsxFragmentFactory": "createFragment",
+    "jsxFragmentFactory": "Fragment",
+    "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "./dist",
-    "rootDir": "./src"
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*"]
+  "include": ["src"]
 }
 

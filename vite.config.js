@@ -1,17 +1,13 @@
-// vite.config.ts
 import { defineConfig } from "vite";
 
 export default defineConfig({
   esbuild: {
     jsxFactory: "createElement",
-    jsxFragment: "createFragment"
+    jsxFragment: "Fragment"
   },
+  root: ".", 
   build: {
-    outDir: "dist",
-    target: "esnext"
-  },
-  server: {
-    open: true,
-    port: 5173
+    outDir: "dist" 
   }
 });
+
